@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+body{
+    background-color: #1b1b2f;
+}
+#total {
+    background-color: #1b1b2f;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+}
+#total{
+    display: none;
+}
+
+svg {
+    position: absolute;
+    width: 240px;
+    height: 120px;
+    top: 0; right: 0;
+    bottom: 0; left: 0; 
+    margin: auto;
+  }
+#total > h3 {
+    color: #ffff;
+}
+.calculator {
+    background-color: #2e2e3a;
+    width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+.display input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    text-align: right;
+    font-size: 24px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.buttons input[type="button"] {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.buttons input[type="button"]:hover {
+    background-color: #666;
+}
+.buttons input#clear,
+.buttons input#erase {
+    background-color: #f05454;
+    color: #fff;
+}
+.buttons input#equal {
+    background-color: #0078ff;
+    color: #fff;
+}
+.buttons input#equal:hover,
+.buttons input#clear:hover,
+.buttons input#erase:hover {
+    background-color: #0056cc;
+}
+.buttons input#pow,
+.buttons input#sin,
+.buttons input#cos,
+.buttons input#tan,
+.buttons input#pi,
+.buttons input#e,
+.buttons input#log {
+    background-color: #1f4068;
+    color: #fff;
+}
+.buttons input#pow:hover,
+.buttons input#sin:hover,
+.buttons input#cos:hover,
+.buttons input#tan:hover,
+.buttons input#pi:hover,
+.buttons input#e:hover,
+.buttons input#log:hover {
+    background-color: #394867;
+}
